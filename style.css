@@ -1,0 +1,103 @@
+@import url('https://fonts.googleapis.com/css?family=DM+Sans:400,500,700&display=swap');
+* {
+    box-sizing: border-box;
+    outline: none;
+  }
+html, body{
+    width: 100%;
+    height: 100%;
+    margin: 0;
+}
+body{
+    background: rgb(18, 18, 66);
+    text-align:center;
+}
+.music-app{
+    position: relative;
+   /* background: linear-gradient(70deg, rgb(18, 36, 34),rgb(67, 163, 152), rgb(144, 2, 23));*/
+    width: 320px;
+    height: 620px;
+    border-radius: 30px;
+    margin: auto; /* center in the screen*/
+    margin-top:20px;
+    /*opacity:0.98;*/
+    background:rgba(255, 255, 255, 0.5);
+}
+#mobile{
+    animation-name: stars;
+    animation-duration:4s;
+    animation-iteration-count: infinite;
+}
+@keyframes stars{
+    0%{
+        background-color: white;
+    }
+    25%{
+        background-color: #548CA8;
+    }
+    50%{
+        background-color: #476072;
+    }
+    75%{
+        background-color: #334257;
+    }
+    100%{
+        background: linear-gradient(140deg, #334257, #476072, #548CA8, #EEEEEE);
+    }
+}
+#name-of-playlist{
+    font-size: 20px;
+    text-transform: uppercase;
+    font-weight: bold;
+    padding-top: 25px;
+    color: rgba(255, 255, 255, 0.9);
+}
+	
+#album-img{
+    text-align: center;
+    padding: 35px 0  5px 0;
+}
+#album-img:hover{
+    transform: scale(1.09);
+}
+img{
+    border-radius: 20px;
+    width: 250px;
+    height: 250px;
+    margin-top: -20px;
+}
+#song{
+    font-size: 25px;
+    text-transform: capitalize;
+    font-weight:bolder;
+    text-align: left;
+    margin: 15px 30px -10px 30px;
+    color: white;
+}
+#author{
+    font-size: 13px;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    text-transform: capitalize;
+    text-align: left;
+    margin:15px 30px 0 30px;
+    font-weight: inherit;
+    color:white;
+    opacity: 0.5;
+}
+
+.menu{
+    display: flex;
+    align-items: center;
+    font-size: .8em;
+    justify-content: center;
+    color:rgb(175, 109, 120);
+}
+.play, .pause{
+    margin: 15px 25px;
+    color:beige;
+}
+#audio{
+    width: 250px;
+    height: 40px;
+    margin: 40px 20px 5px 20px;
+}
